@@ -1,4 +1,30 @@
+# AZURE VIRTUAL NETWORK
 
+![Virtual Network](Imagenes\vitualNetwork.png)
+
+**Network: proporciona servicios de red que permiten conectar los recursos con el mundo exterior**
+
+- **modelo de servicio:** IaaS
+- **Funcion:** permite que los recursos de azure se comuniquen.
+- **Funcion:** Permite enrutamiento de trafico de red.
+- **Funcion:** Permite el filtrado de trafico de red.
+- **Cuando usar:** Conectar maquinas virtuales.
+
+-----------------------------------------------------------------------
+
+#### Pasos para conectar dos Redes Virtuales
+
+1.- Abrimos el [Portal de Azure](https://portal.azure.com/)
+
+2.- Creamos un nuevo grupo de recursos
+revisar y crear, luego le damos crear.
+
+ ![Grupo de Recursos](Imagenes\groupresorurces.JPG)
+
+
+3.- AHora creamos la red Virtual para que asi la maquina virtual quede dentro de la red.
+
+![Create Virtual Network](Imagenes\redvirtual.JPG)
 
 
 4.- Una ves que entremos a redes virtuales, le damos crear para empezar a configurarla.
