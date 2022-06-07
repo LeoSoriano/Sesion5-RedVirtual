@@ -1,6 +1,6 @@
 # AZURE VIRTUAL NETWORK
 
-![Virtual Network](Imagenes\vitualNetwork.png)
+![Virtual Network](Imagenes/vitualNetwork.png)
 
 **Network: proporciona servicios de red que permiten conectar los recursos con el mundo exterior**
 
@@ -19,12 +19,12 @@
 2.- Creamos un nuevo grupo de recursos
 revisar y crear, luego le damos crear.
 
- ![Grupo de Recursos](Imagenes\groupresorurces.JPG)
+ ![Grupo de Recursos](Imagenes/groupresorurces.JPG)
 
 
 3.- AHora creamos la red Virtual para que asi la maquina virtual quede dentro de la red.
 
-![Create Virtual Network](Imagenes\redvirtual.JPG)
+![Create Virtual Network](Imagenes/redvirtual.JPG)
 
 
 4.- Una ves que entremos a redes virtuales, le damos crear para empezar a configurarla.
@@ -37,7 +37,7 @@ revisar y crear, luego le damos crear.
 
 8.- Ahora le damos en revisar y crear, para que asi le demos crear.
 
-![VirtualNetwork1](Imagenes\virtualnetwork1.JPG)
+![VirtualNetwork1](Imagenes/virtualnetwork1.JPG)
 
 9.- Vamos a crear otra red virtual, con el mismo grupo de recursos, pero otro nombre.
 
@@ -45,7 +45,7 @@ revisar y crear, luego le damos crear.
 
 11.- Ahora procedemos a revisar y crear, para crear la segunda red virtual.
 
-![VirtualNetwork2](Imagenes\virtualnetwork2.JPG)
+![VirtualNetwork2](Imagenes/virtualnetwork2.JPG)
 
 
 **nota: Por que nos creamos otra? por que en mi suscripcion ya existe una red que esta ocuoando ese lugar.**
@@ -58,7 +58,7 @@ revisar y crear, luego le damos crear.
 
 **nota: Para ver el funcionamiento, vamos a crear dos maquinas virtuales**
 
-![MaquinaVirtual](Imagenes\machine.PNG)
+![MaquinaVirtual](Imagenes/machine.PNG)
 
 15.- Nos vamos a crear las maquinas virtuales que seran de Linux **(ubuntu server 20.04)**.
 
@@ -68,7 +68,7 @@ revisar y crear, luego le damos crear.
 
 18.- ahora en la parte de **redes** en la maquina virtual, debemos porner la redvirtual 1 **(pero debemos asegurarnos que las redes y las maquinas esten en la misma region)**
 
-![Network Machine](Imagenes\networkmachine.JPG)
+![Network Machine](Imagenes/networkmachine.JPG)
 
 19.- A continuacion le damos en revisar y crear, dejemos que se cree esa maquina.
 
@@ -76,51 +76,51 @@ revisar y crear, luego le damos crear.
 
 21.- Ahora nos vamos a la maquina virtual 1 y nos vamos a la seccion de conectar SSH, estando ahi debemos darle click al Cloud Shell donde usaremos codigos para controlar Azure.
 
-![ssh](Imagenes\ssh.JPG)
+![ssh](Imagenes/ssh.JPG)
 
 22.- copiamos el comando de la maquia virtual
 
-![Comando de SSH](Imagenes\shellssh.JPG)
+![Comando de SSH](Imagenes/shellssh.JPG)
 
 23.- le damoc click al cloud shell y le damos clik donde dice crear almacenamiento darle click a nuestro almacenamiento
 
 24.- ahora una ves que cargue pondremos el comando "ssh y pegamos el comando que nos habian dado"
-![bash](Imagenes\bash.JPG)
+![bash](Imagenes/bash.JPG)
 
 25.- una ves que lo hagamos, nos dira que si queremos continuar, a lo que le diremos que "yes"
 
-![yes](Imagenes\yes.JPG)
+![yes](Imagenes/yes.JPG)
 
 26.- Una ves que cargue todo ese proceso, cuando en nuetsro usuario aparzca **@ y el nombre de la maquina virtual que le dimos**, significa que ya estamos conectados
 
-![Usuario Conectado](Imagenes\usuarioubuntu.JPG)
+![Usuario Conectado](Imagenes/usuarioubuntu.JPG)
 
 
 27.- si quieres hacer una prueba para ver si estas conectado, deberas pondras el comando **sudo apt-get moo** y te aparecera una vaquita
 
-![moo](Imagenes\moo.JPG)
+![moo](Imagenes/moo.JPG)
 
 28.- Para conectar las otra maquina virtual, debemor ir a nuestra red virtual 1 y a la seccion que dice Emparejamientos.
 
-![Emparejar](Imagenes\pearing.JPG)
+![Emparejar](Imagenes/pearing.JPG)
 
 29.- creamos un emparejamiento, dandole un nombre y nombre al vinculo.
 
-![Vinculo0](Imagenes\linknamepeering.JPG)
+![Vinculo0](Imagenes/linknamepeering.JPG)
 
 30.- seleccionamos la red virtual que queremos conectar.
 
-![pearing](Imagenes\virtualconection.JPG)
+![pearing](Imagenes/virtualconection.JPG)
 
 31.- Le damos un nombre a este emparejamiento remoto.
 
 **NOTA: De preferencia, lo que pusiste al principio pero al revez.
 
-![name pearing](Imagenes\remotepeering.JPG)
+![name pearing](Imagenes/remotepeering.JPG)
 
 32.- Volvemos al Bash y lo que haremos es poner el comando **ping y el ID de la segunda red virtual** nos desplegara varios datos, lo que significara que estara conectada.
 
-![Conectar Segunda red Virtual](Imagenes\porfinconectado.JPG)
+![Conectar Segunda red Virtual](Imagenes/porfinconectado.JPG)
 
 
 ----------------------------------------------------------------------------------
